@@ -16,6 +16,7 @@
 <body>
 <jsp:include page="header.jsp" />
 
+
 <% if(user==null) response.sendError(response.SC_BAD_REQUEST, "Sessione scaduta!");
 else {
 	if(user.getRole()!=null)
